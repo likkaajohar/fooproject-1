@@ -12,7 +12,7 @@ pipeline {
       }
      post {
       always {
-        junit '**/TEST*.xml'
+        junit 'target/surfire-reports/TEST*.xml'
       }
      }
   }
